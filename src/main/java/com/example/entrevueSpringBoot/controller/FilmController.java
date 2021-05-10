@@ -21,7 +21,7 @@ public class FilmController {
 
     @GetMapping("/{id}")
     ResponseEntity<Film> getById(@PathVariable Long id) {
-        return ResponseEntity.status(HttpStatus.ACCEPTED).body(filmService.getById(id));
+        return ResponseEntity.status(HttpStatus.OK).body(filmService.getById(id));
     }
 
 
